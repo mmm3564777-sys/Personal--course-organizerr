@@ -1,6 +1,6 @@
-/* General Reset */
+/* Dark Theme Setup */
 body {
-    background-color: #0a0a0a;
+    background-color: #0d0d0d;
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -12,34 +12,41 @@ body {
     margin: auto;
 }
 
-header h1 {
-    font-size: 3rem;
-    letter-spacing: 4px;
-    margin-bottom: 5px;
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    color: #fff;
+    margin-bottom: 40px;
 }
 
-header p {
+.title-section h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.title-section p {
     color: #888;
-    margin-bottom: 30px;
+    font-size: 14px;
 }
 
-/* Search Bar Styling */
-.search-container {
+/* Search Box Styling */
+.search-box {
     position: relative;
-    margin-bottom: 20px;
+    margin: 30px 0;
 }
 
 #searchInput {
     width: 100%;
-    padding: 12px 20px;
-    background-color: #151515;
+    padding: 12px 15px;
+    background-color: #1a1a1a;
     border: 1px solid #333;
     border-radius: 4px;
     color: white;
-    outline: none;
+    font-size: 16px;
 }
 
-.search-icon {
+.search-box .icon {
     position: absolute;
     right: 15px;
     top: 50%;
@@ -47,34 +54,34 @@ header p {
     color: #555;
 }
 
-/* Filter Buttons */
-.filters {
+/* Category Buttons */
+.categories {
     display: flex;
     gap: 10px;
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
 
-.filter-btn {
+.btn {
     background: #1a1a1a;
     border: 1px solid #333;
     color: #888;
-    padding: 8px 16px;
+    padding: 8px 18px;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
 }
 
-.filter-btn.active {
+.btn.active {
     background: #ffffff;
     color: #000;
 }
 
-/* Responsive Grid */
+/* The Grid (Crucial for the layout) */
 .games-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 20px;
 }
 
@@ -84,26 +91,27 @@ header p {
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .game-card:hover {
-    border-color: #555;
+    border-color: #666;
     transform: translateY(-5px);
 }
 
 .game-card img {
     width: 100%;
+    height: 160px;
+    object-fit: cover;
     display: block;
 }
 
 .game-info {
     padding: 15px;
-    text-align: left;
 }
 
 .game-info h3 {
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 1px;
-      }
+}
