@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus - Game Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>LIBRARY</h1>
+            <p>Access your collection. Engineered for maximum performance.</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="Search titles...">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active">ALL GAMES</button>
+            <button class="filter-btn">RPG</button>
+            <button class="filter-btn">SHOOTER</button>
+            <button class="filter-btn">STRATEGY</button>
+        </div>
+
+        <div class="games-grid" id="gamesGrid">
+            
+            <div class="game-card" onclick="launchGame('Neon Overdrive')">
+                <img src="https://via.placeholder.com/300x150/1a1a1a/ffffff?text=NEON+OVERDRIVE" alt="Neon Overdrive">
+                <div class="game-info">
+                    <h3>NEON OVERDRIVE</h3>
+                </div>
+            </div>
+
+            <div class="game-card" onclick="launchGame('Void Walker')">
+                <img src="https://via.placeholder.com/300x150/1a1a1a/ffffff?text=VOID+WALKER" alt="Void Walker">
+                <div class="game-info">
+                    <h3>VOID WALKER</h3>
+                </div>
+            </div>
+
+            <div class="game-card" onclick="launchGame('Cursed Realms')">
+                <img src="https://via.placeholder.com/300x150/1a1a1a/ffffff?text=CURSED+REALMS" alt="Cursed Realms">
+                <div class="game-info">
+                    <h3>CURSED REALMS</h3>
+                </div>
+            </div>
+
+            <div class="game-card" onclick="launchGame('Command Pro')">
+                <img src="https://via.placeholder.com/300x150/1a1a1a/ffffff?text=COMMAND+PRO" alt="Command Pro">
+                <div class="game-info">
+                    <h3>COMMAND PRO</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
