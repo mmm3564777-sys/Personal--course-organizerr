@@ -10,55 +10,39 @@
 
     <div class="container">
         <header>
-            <h1>LIBRARY</h1>
-            <p>Access your collection. Engineered for maximum performance.</p>
+            <h1 class="logo">NEXUS</h1>
+            <div class="title-section">
+                <h2>LIBRARY</h2>
+                <p>Access your collection. Engineered for maximum performance.</p>
+            </div>
         </header>
 
-        <div class="search-container">
+        <div class="search-box">
             <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="Search titles...">
-            <span class="search-icon">🔍</span>
+            <span class="icon">🔍</span>
         </div>
 
-        <div class="filters">
-            <button class="filter-btn active">ALL GAMES</button>
-            <button class="filter-btn">RPG</button>
-            <button class="filter-btn">SHOOTER</button>
-            <button class="filter-btn">STRATEGY</button>
+        <div class="categories">
+            <button class="btn active">ALL GAMES</button>
+            <button class="btn">RPG</button>
+            <button class="btn">SHOOTER</button>
+            <button class="btn">STRATEGY</button>
         </div>
 
         <div class="games-grid" id="gamesGrid">
             
             <div class="game-card" onclick="launchGame('Neon Overdrive')">
-                <img src="https://via.placeholder.com/300x150/1a1a1a/ffffff?text=NEON+OVERDRIVE" alt="Neon Overdrive">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500" alt="Neon Overdrive">
                 <div class="game-info">
                     <h3>NEON OVERDRIVE</h3>
                 </div>
             </div>
 
             <div class="game-card" onclick="launchGame('Void Walker')">
-                <img src="https://via.placeholder.com/300x150/1a1a1a/ffffff?text=VOID+WALKER" alt="Void Walker">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500" alt="Void Walker">
                 <div class="game-info">
                     <h3>VOID WALKER</h3>
                 </div>
             </div>
 
             <div class="game-card" onclick="launchGame('Cursed Realms')">
-                <img src="https://via.placeholder.com/300x150/1a1a1a/ffffff?text=CURSED+REALMS" alt="Cursed Realms">
-                <div class="game-info">
-                    <h3>CURSED REALMS</h3>
-                </div>
-            </div>
-
-            <div class="game-card" onclick="launchGame('Command Pro')">
-                <img src="https://via.placeholder.com/300x150/1a1a1a/ffffff?text=COMMAND+PRO" alt="Command Pro">
-                <div class="game-info">
-                    <h3>COMMAND PRO</h3>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
